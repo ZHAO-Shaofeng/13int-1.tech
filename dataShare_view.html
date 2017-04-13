@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>C3中众多单位px,em,rem,vh等介绍</title>
+	<link rel="shortcut icon" href="fonts/favicon.ico">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+	<link href="js/fileinput/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/ripples.min.css">
+	<link rel="stylesheet" href="css/material-icons.css">	
+	<link rel="stylesheet" href="css/framework.css"><!--头的架设-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if IE]>
+		<script src="../static/http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- Page Preloader -->
+	<div class="animationload">
+	  <div class="loader">
+	    <svg class="circular" viewBox="25 25 50 50">
+	      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="1"/>
+	    </svg>
+	    <p>Loading...</p>
+	  </div>
+	</div>
+	<!-- Page Preloader end-->
+
+	<div id="header">
+		<ul class="header-inner">
+			<li class="menu-trigger" id="menu-trigger">
+				<div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+					<svg width="1000px" height="1000px">
+						<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+						<path id="pathB" d="M 300 500 L 700 500"></path>
+						<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+					</svg>
+					<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+				</div><!-- menu-icon-wrapper-->
+				<div id="dummy" class="dummy"></div><!-- dummy -->
+			</li>
+			<li class="logo hidden-xs"><a href="index.html">13INT-1</a></li>
+			<li class="pull-right">
+				<ul class="top-menu">
+					<li id="top-search"><a href="javascript:void(0);"><i class="material-icons">search</i></a></li>
+					<li class="dropdown" id="info-btn">
+						<a href="javascript:void(0);">
+							<i class="material-icons">notifications</i>
+						</a>
+						<div class="dropdown-menu dropMenu pull-right" id="info">
+							<div class="lv-header">消息提醒</div>
+              <div class="lv-body">                  
+                <a class="lv-item" href="javascript:void(0);">
+                  <div class="media">
+                    <div class="pull-left">
+                      <img class="lv-img-sm" src="images/1.jpg" alt="">
+                    </div>
+                    <div class="media-body">
+                      <div class="lv-title">David Belle</div>
+                      <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                    </div>
+                  </div>
+                </a>
+                <a class="lv-item" href="javascript:void(0);">
+                  <div class="media">
+                    <div class="pull-left">
+                      <img class="lv-img-sm" src="images/1.jpg" alt="">
+                    </div>
+                    <div class="media-body">
+                      <div class="lv-title">David Belle</div>
+                      <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div style="overflow: hidden;"><a class="lv-footer" href="javascript:void(0);">全部已读</a></div>
+						</div><!--dropdown-menu end-->
+					</li>
+					<li class="hidden-xs chat-btn"><a href="javascript:void(0);" id="chat-btn"><i class="material-icons">comment</i></a></li>
+					<!-- <li><a href="login.html" class="login-register"><span>登录/注册</span></a></li> -->
+					<!-- 登录后 -->
+					<li id="top-user-btn">
+						<div class="user-headimg"><img src="images/tou.jpg" alt=""></div>
+						<div class="dropdown-menu dropMenu pull-right" id="top-user">
+              <div class="lv-header">
+                个人信息                  
+              </div>
+              <div class="lv-body">
+                <div class="myInfo">
+                  <div class="myphoto"> 
+                    <div class="userhead" data-type="update_avatar"> 
+                      <a href="myProfile.html" style="display:block;">
+	                      <img src="images/tou.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="myshow">
+                    <div class="myname">赵少锋</div>
+                    <div class="Email">820731799@qq.com</div>
+                    <div class="signature">该用户很懒，什么都没有写。</div>
+                    <a class="btn user-myprofile" href="myProfile.html">我的账户</a>
+                    <a class="btn user-setting" href="myConfig.html">设置</a>
+                  </div>
+                </div><!--myInfo end-->
+              <div style="overflow: hidden;"><a class="lv-footer" href="javascript:void(0);">退出</a></div>
+						</div><!--dropdown-menu end-->
+					</li>
+					<!-- 登录后 end-->
+				</ul>
+			</li>
+		</ul>
+		<div id="top-search-wrap">
+			<div class="tsw-inner">
+				<i class="material-icons top-search-btn">search</i>
+        <form>
+        	<input type="text" name="keyword">
+        </form>
+			</div><!--tsw-inner end-->
+		</div><!--top-search-wrap end-->
+	</div>
+	<div id="main" class="dataShare_main">
+		<div class="withripple dataShare_back_listveiw c-shadow"><a href="dataShare.html"><i class="material-icons">arrow_back</i></a></div>
+		<div class="leftmenu" id="leftmenu">
+			<ul class="main-menu">
+				<li class="btn btn-default"><a href="index.html"><i class="material-icons">home</i>首页</a></li>
+				<li class="btn btn-default"><a href="classNotice.html"><i class="material-icons">message</i>班级公告</a></li>
+				<li class="btn btn-default"><a href="classPhoto.html"><i class="material-icons">image</i>班级相册</a></li>
+				<li class="btn btn-default"><a href="party.html"><i class="material-icons">restaurant</i>班级聚会</a></li>
+				<li class="btn btn-default"><a href="member.html"><i class="material-icons">supervisor_account</i>班级成员</a></li>
+				<li class="btn btn-default"><a href="javascript:void(0);"><i class="material-icons">file_download</i>资料分享</a></li>
+				<li class="btn btn-default"><a href="userMessage.html"><i class="material-icons">swap_horiz</i>留言反馈</a></li>
+			</ul>
+		</div><!--leftmenu end-->
+		<div class="leftmenu-mb" id="leftmenu-mb"></div><!--左菜单遮罩-->
+		<!-- <div class="chat-mb" id="chat-mb"></div> -->
+		<div class="chat hidden-xs" id="chat">
+			占位  占位  占位  占位  占位
+		</div><!--chat end-->
+		<!---------- main in here ---------->
+		<div class="container dview">
+			<div class="block-header">
+				<ol class="breadcrumb">
+				  <li><a href="index.html">首页</a></li>				  
+				  <li><a href="dataShare.html">笔记分享</a></li>
+				  <li class="active">C3中众多单位px,em,rem,vh等介绍</li>
+				</ol>				
+				<!-- <a href="javascript:void(0)" class="btn btn-info party-launch-btn pull-right">发布公告</a> -->
+			</div><!--block-header end-->
+
+			<div class="card dview_card m-t-25">
+				<div class="dview_card_header" style="background-image: url(images/datahead-bg2.jpg);">
+					<div class="dw-hold">
+						<div class="dview_head"><img src="images/tou.jpg" alt=""></div>
+						<div class="dview_info">
+							<div class="title">C3中众多单位px,em,rem,vh等介绍</div>
+							<ul class="dview_classify">
+					      <li>2016.11.6 12:24</li>
+					      <li>分类：HTML/CSS</li>
+					      <li>浏览：5</li>
+					    </ul>
+						</div><!--dview_info end-->
+					</div><!--dw-hold end-->
+				</div><!--dview_card_header end-->
+			</div><!--card end-->
+
+			<div class="card dview_card">
+				<div class="dview_card_body">
+					<p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">px：绝对单位，页面按精确像素展示</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">em：相对单位，基准点为父节点字体的大小，如果自身定义了font-size按自身来计算（浏览器默认字体是16px），整个页面内1em不是一个固定的值。</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">rem：相对单位，可理解为”root em”, 相对根节点html的字体大小来计算，CSS3新加属性，chrome/firefox/IE9+支持。</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">(另外需注意chrome强制最小字体为12号，即使设置成 10px 最终都会显示成 12px，当把html的font-size设置成10px,子节点rem的计算还是以12px为基准，所以网上很多文章提到的将html的font-size设为10方便计算不是那么可取)。</span></p><pre><font face="arial, verdana, Microsoft YaHei, Tahoma, Simsun, sans-serif"><span style="font-size: 14px;">var ele=document.getElementsByTagName("html")[0],  
+size=document.body.clientWidth/320*20;  
+ele.style.fontSize=size+"px"  <br></span></font></pre><p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><u>注：需设置meta缩放比1:1</u></span></p><pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /&gt;<br></pre><p><br></p><p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">vmin：vw和vh中较小的那个。</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">vmax：vw和vh中较大的那个。</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">vw, vh, vmin, vmax：IE9+局部支持，chrome/firefox/safari/opera支持，iOS safari 8+支持，Android browser4.4+支持，chrome for android39支持</span></p><p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">其它的单位还有：</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">%:百分比</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">in:寸</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">cm:厘米</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">mm:毫米</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">pt:point，大约1/72寸</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">pc:pica，大约6pt，1/6寸</span><br><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"></span></p><p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">ex：取当前作用效果的字体的x的高度，在无法确定x高度的情况下以0.5em计算(IE11及以下均不支持，firefox/chrome/safari/opera/ios safari/android browser4.4+等均需属性加么有前缀)</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;">ch:以节点所使用字体中的“0”字符为基准，找不到时为0.5em(ie10+,chrome31+,safair7.1+,opera26+,ios safari 7.1+,android browser4.4+支持)</span><br style="word-wrap: break-word; color: rgb(51, 51, 51); font-family: arial, verdana, &quot;Microsoft YaHei&quot;, Tahoma, Simsun, sans-serif; font-size: 14px;"></p>
+				</div><!--dview_card_body end-->
+			</div><!--card end-->
+
+			<div class="card dview_card">
+				<div class="wall-comment-list">
+          <!-- Comment Listing -->
+          <div class="wcl-list">
+            <div class="media">
+              <a href="#" class="pull-left">
+                <img src="images/tou.jpg" alt="" class="lv-img-sm">
+              </a>
+              <div class="media-body">
+                <a href="#" class="a-title">David</a> <small class="c-gray m-l-10">2016.11.6 11:20</small>
+                <p class="m-t-5 m-b-0">你可以看下我分享的笔记,稍微调整了你的代码,你想要的效果就出来了,笔记名为  盒子模型随笔</p>
+              </div><!--media-body end-->
+            </div><!--media end-->
+            <div class="media">
+              <a href="#" class="pull-left">
+                <img src="images/tou2.jpg" alt="" class="lv-img-sm">
+              </a>
+              <div class="media-body">
+                <a href="#" class="a-title">zzmkly</a><span>回复</span><a href="#" class="a-title">David</a> <small class="c-gray m-l-10">2016.10.20 08:20</small>
+                <p class="m-t-5 m-b-0">字体的原因</p>
+              </div><!--media-body end-->
+            </div><!--media end-->
+          </div><!--wcl-list end-->
+          <!-- Comment form -->
+          <div class="wcl-form">
+            <div class="wc-comment">
+              <div class="wcc-inner wcc-toggle false_comment">评论...</div>
+							<div class="form-group label-floating true_comment">
+							  <div class="input-group">
+							    <label class="control-label" for="true_comment">我的评论</label>
+							    <textarea class="form-control" rows="2" id="true_comment"></textarea>
+							    <span class="input-group-btn">
+							      <button type="button" class="btn btn-fab btn-fab-mini">
+							        <i class="material-icons">send</i>
+							      </button>
+							    </span>
+							  </div><!--input-group end-->
+							</div><!--form-group end-->
+            </div><!--wc-comment end-->
+          </div><!--wcl-form end-->
+        </div><!--wall-comment-list end-->
+			</div><!--card end-->
+		</div><!--container end-->
+
+		<!---------- main in here  end---------->
+	</div><!--main end-->
+	<div id="footer">
+		Copyright © 2016 13INT-1.TOP
+    <ul class="f-menu">
+      <li><a href="feedback.html">发送反馈</a></li>
+      <li><a href="help.html">帮助</a></li>
+      <li><a href="contact.html">联系我们</a></li>
+    </ul>
+	</div><!--footer end-->
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/material.min.js"></script>
+	<script src="js/ripples.min.js"></script>
+	<script>$.material.init()</script>
+	<!--menu-icon-wrapper-->
+	<link rel="stylesheet" type="text/css" href="js/menu-icon/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="js/menu-icon/component.css" />
+	<script src="js/menu-icon/segment.min.js"></script>
+	<script src="js/menu-icon/ease.min.js"></script>
+	<script src="js/menu-icon/main.js"></script>
+	<!--menu-icon-wrapper end-->
+	<script src="js/header_main.js"></script><!--header按钮响应-->
+	<!--messenger-->
+	<link rel="stylesheet" href="js/messenger/messenger.css">
+	<link rel="stylesheet" href="js/messenger/messenger-theme-future.css">
+	<script src="js/messenger/messenger.min.js"></script>
+	<!--messenger end-->
+	<!-- summernote -->
+	<link rel="stylesheet" href="js/summernote/summernote.css">
+	<!-- summernote end-->
+	<!--表单的控制-->
+	<script>
+		$(".currenty-new, .party-launch-btn").on("click", function(){
+			$("#party-form").slideDown(500);
+			$("html,body").animate({scrollTop: 0},1000);
+		})
+		$(".currency-form-close").on("click", function(){
+			$("#party-form").slideUp();
+		})
+	  $(".false_comment").on("click", function(){
+	  	$(".true_comment").show();
+	  	$(".true_comment textarea").focus();
+	  	$(".false_comment").hide();
+	  })
+	</script>
+</body>
+</html>
