@@ -606,12 +606,12 @@
     .pmo-contact{display: none;}
     .party-body{
         padding: 0;
-        background: #edecec;
+        background: #f7f7f7;
     }
     #party-main{
         box-shadow: none;
         padding: 0 16px;
-        background: #edecec;
+        background: #f7f7f7;
         margin-bottom: 0;
     }
     .timecard-body{
@@ -619,7 +619,7 @@
         background: transparent;
     }
     .timeline{
-        background: #edecec;
+        background: #f7f7f7;
         padding: 0;
     }
     .timeline-entry{
@@ -628,7 +628,11 @@
     }
     .timeline-entry .timeline-stat{display: none;}
     .timeline:before, .timeline:after{content: none;}
-    .timeline-entry .timeline-label{margin: 0;}
+    .timeline-entry .timeline-label{
+        margin: 0;
+        border: none;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
 }
 .party-form{
     width: 100%;
@@ -1101,7 +1105,6 @@
 }
 .listview .lv-title a:hover{
     color: #2196f3;
-    text-decoration: underline !important;
 }
 .listview:not(.lv-message) .lv-title {
     color: #000;
@@ -1185,7 +1188,7 @@
     .listview .lv-item.media{
         background: #fff;
         margin-top: 16px;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
 }
 .dview_card_header{
@@ -1267,7 +1270,7 @@
 }
 .wall-comment-list {
     padding: 20px;
-    background: #f7f7f7;
+    background: #fff;
 }
 .wall-comment-list .lv-img-sm {
     width: 40px;
@@ -1284,9 +1287,9 @@
     padding: 10px 15px;
     resize: none;
     border-radius: 2px;
-    background: #fff;
+    background: #f7f7f7;
     color: #9A9A9A;
-    cursor: pointer;
+    cursor: text;
 }
 .wcl-list + .wcl-form {margin-top: 25px;}
 .true_comment{display: none;}
@@ -1688,7 +1691,7 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
 .member-main .item{
     margin: 25px 0 0;
     background: #fff;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .member-main .item .item-head{text-align: center;}
 .member-main .item .item-head a img{
