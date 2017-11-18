@@ -83,22 +83,35 @@ $(function(){
 	$(window).scroll(function(e){  
 	   	bottom = $(this).scrollTop();  
 	    if(top <= bottom){//下滚  
-	      $("#header").css("top", "-75px");
-	      $(".dataShare_back_listveiw").css("bottom", "-75px");
+	      // $("#header").css("top", "-75px");
+	      // $(".dataShare_back_listveiw").css("bottom", "-75px");
 	    }  
 	    else{//上滚  
-	      $("#header").css("top", "0");
-	      $(".dataShare_back_listveiw").css("bottom", "15px");
+	      // $("#header").css("top", "0");
+	      // $(".dataShare_back_listveiw").css("bottom", "15px");
 	    }  
 	    setTimeout(function(){top = bottom;},0);         
 	});
 	// 隐藏和显示通用新增按钮
-	$(window).scroll(function(){
-		if($(window).scrollTop() > 100){
-			$(".currenty-new").css("bottom", "20px");
-		}
-		if($(window).scrollTop() < 100){
-			$(".currenty-new").css("bottom", "-50px");
-		}
-	})
+	// $(window).scroll(function(){
+	// 	if($(window).scrollTop() > 100){
+	// 		$(".currenty-new").css("bottom", "20px");
+	// 	}
+	// 	if($(window).scrollTop() < 100){
+	// 		$(".currenty-new").css("bottom", "-50px");
+	// 	}
+	// })
+
+	$("#header, .currenty-new").headroom({
+	 	"offset": 80,
+	  	"tolerance": 5,
+	  	"classes" : {
+	        // 当元素初始化后所设置的class
+	        initial : "toggle",
+	        // 向上滚动时设置的class
+	        pinned : "headroom--pinned",
+	        // 向下滚动时所设置的class
+	        unpinned : "headroom--unpinned"
+	    }
+	});
 })

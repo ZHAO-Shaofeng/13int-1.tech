@@ -1,7 +1,7 @@
 @charset "utf-8";
 .clear{clear: both;}
 .container{	padding: 0;}
-.c-shadow{box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;}
+.c-shadow{box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;}
 .m-t-5{margin-top: 5px !important;}
 .m-t-25{margin-top: 25px !important;}
 .l-p-4{letter-spacing: 4.2px;}
@@ -372,7 +372,7 @@
 .timeline-icon img {width: 46px;height: 46px;border-radius: 50%;vertical-align: top;}
 .timeline-entry .timeline-stat .timeline-icon:empty {border: 1px solid #a4b4c7; height: 13px;width: 13px;background-color: #fff;}
 .timeline-entry .timeline-stat .timeline-time{display: inline-block;padding: 5px 0;margin-top: 3px;background-color: #fff; color: #848484;font-size: 11px;max-width: 70px;}
-.timeline-entry .timeline-label{ background:#f5f5f5; margin-left:90px; position:relative;border: 1px solid #e3e3e3;}
+.timeline-entry .timeline-label{ background:#f5f5f5; margin-left:90px; position:relative;border: 1px solid #f5f5f5;}
 .timeline-entry .timeline-label .label-title{ font-weight:700; margin-bottom:12px;}
 .timeline-entry .timeline-label .label-title span{color: rgb(33, 150, 243); font-weight: bold;}
 .timeline-entry .timeline-label .label-title .spread{ font-weight:normal; position:absolute; right:15px; cursor:pointer; color:#2196f3;}
@@ -425,7 +425,7 @@
     top: 0;
     width: 300px;
     height: 100%;
-    background: #f8f8f8;
+    background: #fff;
     border-right: 1px solid #eee;
     overflow: hidden;
 }
@@ -552,7 +552,8 @@
     position: fixed !important;
     z-index: 97;
     right: 20px;
-    bottom: -50px;
+    /*bottom: -50px;*/
+    bottom: 20px;
     background-color: #f44336;
     width: 50px;
     height: 50px;
@@ -1694,7 +1695,7 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     margin: 20px auto 0;
 }
 .member-main .item .item-info{
@@ -1814,7 +1815,7 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
 .cp-tab-nav{
     margin: 0 auto 25px;
     width: calc(100% - 32px);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .fcontainer{
     max-width: 900px;
