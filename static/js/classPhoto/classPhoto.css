@@ -469,3 +469,6 @@
     background-color: rgba(153,153,153,.2);
     padding: 8px 15px;
 }
+@media (max-width: 768px) {
+	.img-wrap img{border: none;}
+}

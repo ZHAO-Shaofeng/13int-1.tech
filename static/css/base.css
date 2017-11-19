@@ -2,6 +2,7 @@ body{background-color: rgb(247, 247, 247); color: #5e5e5e; font-size: 13px; font
 ul{list-style: none; padding: 0;}
 img{border: 0;}
 a{text-decoration: none !important; outline: none !important;}
+a, a:focus, a:hover{color: #2196f3;}
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -79,7 +80,7 @@ a{text-decoration: none !important; outline: none !important;}
     float: left;
 }
 #header .logo a{
-    padding: 7px 10px;
+    padding: 5px 10px;
     color: #fff;
     text-transform: uppercase;
     display: block;
@@ -123,6 +124,11 @@ a{text-decoration: none !important; outline: none !important;}
     -o-transform: scale(1);
     transform: scale(1);
 }
+@media (max-width: 768px) {
+    #header{padding: 0 16px 0 0;}
+    .main-menu li a{padding: 14px 20px 14px 23px;}
+    .menu-trigger:before{left: 10px;}
+}
 .top-menu{padding: 0;}
 .top-menu > li {
     display: inline-block;
@@ -140,7 +146,7 @@ a{text-decoration: none !important; outline: none !important;}
     font-weight: 400;
 }
 .top-menu > li > a > i{
-    font-size: 20px;
+    font-size: 22px;
     line-height: 36px;
 }
 .horizontal-flip{
@@ -238,7 +244,7 @@ a{text-decoration: none !important; outline: none !important;}
     padding-left: 0;
 }
 .main-menu li a{
-    padding: 14px 20px 14px 22px;
+    padding: 14px 20px 14px 23px;
     display: block;
     color: rgba(0,0,0,0.87);
     font-weight: 500;
@@ -249,7 +255,7 @@ a{text-decoration: none !important; outline: none !important;}
     background-color: #f7f7f7;
 }
 .main-menu li a i{
-    width: 35px;
+    width: 44px;
     font-size: 20px;
     top: -1px;
     position: relative;
@@ -311,7 +317,7 @@ a{text-decoration: none !important; outline: none !important;}
     top: 36px;
 }
 #top-user .lv-footer{margin-top: 10px;}
-#top-user .lv-body{min-height: initial !important;}
+#top-user .lv-body{min-height: inherit !important;}
 .myInfo {
     padding: 12px 12px 12px 115px;
     position: relative;
@@ -507,7 +513,7 @@ a{text-decoration: none !important; outline: none !important;}
 }
 .top-search-btn{
     position: absolute;
-    top: 15px;
+    top: 13px;
     font-size: 23px;
     font-style: normal;
     color: #aaa;
@@ -515,9 +521,9 @@ a{text-decoration: none !important; outline: none !important;}
     text-align: center;
     border-radius: 2px 0px 0px 2px;
     cursor: pointer;
-    left: 15px;
+    left: 13px;
     height: 40px;
-    padding: 9px 0 0 4px;
+    padding: 9px 0 0 0;
 }
 .top-search-btn:hover {
     background-color: #e3e3e3;
@@ -609,7 +615,7 @@ a{text-decoration: none !important; outline: none !important;}
     background: #f44336;
     padding: 1px 5px;
     border-radius: 2px;
-    right: 5px;
+    right: 7px;
     top: -3px;
     font-size: 10px;
     line-height: 15px;
