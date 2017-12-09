@@ -409,7 +409,7 @@
 	border-top: 1px solid #424242;
 	width: 100%;
 	margin-top: 20px;
-    height: 190px;
+    max-height: 360px;
     overflow: auto;
 }
 .datailsComment ul{padding-top: 6px;}
