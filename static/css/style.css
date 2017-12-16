@@ -447,7 +447,6 @@
 }
 .party-left .img-div .pmo-stat .c-white{margin: 0;}
 .party-left .pmo-contact{padding: 20px 20px 0;}
-.party-left .pmo-contact > h2,
 .party-left .pmo-contact > p{text-indent: 26px;}
 .pmo-contact > h2, .ixcontact > h2{
     font-size: 16px;
@@ -757,10 +756,10 @@
     border-radius: 3px;
 }
 .header-primary h4{
-    font-weight: 700;
+    /* font-weight: 700; */
     color: #fff;
     font-size: 20px;
-    font-family: "Roboto Slab", "Times New Roman", serif;
+    /* font-family: "Roboto Slab", "Times New Roman", serif; */
 }
 .input-group .input-group-addon {
     border: 0;
@@ -802,6 +801,9 @@
     height: auto;
     padding: 0;
     margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 .header-filter::before {background-color: rgba(0, 0, 0, 0.3);}
 .header-filter:before, .header-filter:after {
@@ -814,7 +816,7 @@
     top: 0;
     content: "";
 }
-.login_footer .container{padding-top: 4%;}
+.login_footer .container{padding: 2% 0;}
 .login_footer ul{
     margin-bottom: 0;
     padding: 0;
@@ -1844,53 +1846,50 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
 }
 .file-input{padding: 7px 0;}
 .feedback_validate .help-block{position: absolute;}
-.help-menu{border-bottom: 1px solid #e3e3e3;}
+.help-menu{border-top: 1px solid #e3e3e3;}
+.help-menu .panel-heading{padding: 0;}
+/* .help-menu .item{border-bottom: 1px solid #e3e3e3;} */
 .help-menu h3{
     height:45px; 
     line-height:45px; 
     padding-left:20px;  
-    border-top:1px solid #e3e3e3; 
-    background:#f4f4f4; 
     cursor:pointer;
-    font:normal 14px/45px "Microsoft YaHei";
+    font:normal 15px/45px "Microsoft YaHei";
     margin: 0;
     font-weight: 400;
 }
-.help-menu h3 em{ 
+.help-menu h3 a{
+    display: block;
+}
+.help-menu h3 a:hover, .help-menu h3 a:focus{color: rgba(0,0,0,.87);}
+.help-menu a em{ 
     float:right; 
     display:block; 
     width:40px; 
     height:45px;
-    background:url(../images/icoAdd.png) 16px 20px no-repeat; 
+    background:url(../images/icoAdd.png) 16px -47px no-repeat; 
     cursor:pointer; 
 }
 .help-menu h3.on{background: #fff;}
-.help-menu h3.on em{ background-position:16px -47px; }
-.help-menu ul{
-    color:#999; 
-    display:none; /* 默认都隐藏 */ 
-    margin: 0;
-    position: relative;
-    z-index: 100;
-}
+.help-menu a.collapsed em{ background-position: 16px 20px;}
 .help-menu ul li{
     height: 30px;
     line-height: 30px;
     padding-left: 35px;
     cursor: pointer;
     position: relative;
-    z-index: 100;
+    /* z-index: 100; */
     color: #999;
     font-weight: 400;
 }
-.help-menu ul li:hover{background: rgb(253, 253, 253);}
-.help-menu ul li.on{color: #555;}
+.help-menu ul li:hover{background: rgb(247, 247, 247);}
+.help-menu ul li.on{color: #2296f3;}
 .help-menu ul li.on:before{
     content: "";
     position: absolute;
     width: 4px;
     height: 4px;
-    background: #000;
+    background: #2296f3;
     border-radius: 50%;
     margin: 14px 0 0 -11px;
 }
