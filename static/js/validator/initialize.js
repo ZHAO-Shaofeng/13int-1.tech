@@ -37,7 +37,7 @@ $(document).ready(function() {
       captcha: {
         validators: {
           callback: {
-            message: '你好菜，数学体育老师教的？',
+            message: '完了，这都错...',
             callback: function(value, validator) {
               var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
               return value == sum;
@@ -108,7 +108,7 @@ $(document).ready(function() {
       captcha2: {
         validators: {
           callback: {
-            message: '你好菜，数学体育老师教的？',
+            message: '完了，这都错...',
             callback: function(value, validator) {
               var items = $('#captchaOperation2').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
               return value == sum;
