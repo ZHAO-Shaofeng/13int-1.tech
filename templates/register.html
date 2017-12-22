@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>注册</title>
+    <link rel="shortcut icon" href="../static/fonts/favicon.ico">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../static/css/ripples.min.css">
+    <link rel="stylesheet" href="../static/css/material-icons.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="login-page">
+    <div class="page-header header-filter">
+        <div class="container" style="flex: 1;">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                    <!-- 注册 -->
+                    <div class="card card-enter" name="register_Form">
+                        <form class="form login_Form register_validate" method="" action="">
+                            <div class="header header-primary text-center">
+                                <h4 class="card-title">注 册</h4>
+                            </div>
+                            <p class="description text-center">Let's ready to start anew</p>
+                            <div class="content">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">email</i>
+                                    </span>
+                                    <div class="form-group is-empty">
+                                        <input type="eamil" class="form-control" placeholder="邮箱" name="email">
+                                        <small class="material-input"></small>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">account_circle</i>
+                                    </span>
+                                    <div class="form-group is-empty">
+                                        <input type="text" class="form-control" placeholder="帐号" name="name">
+                                        <small class="material-input"></small>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                                    <div class="form-group is-empty">
+                                        <input type="password" placeholder="密码" class="form-control" name="new_password">
+                                        <small class="material-input"></small>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">done_all</i>
+                                    </span>
+                                    <div class="form-group is-empty">
+                                        <input type="password" placeholder="确认密码" class="form-control" name="confirm_password">
+                                        <small class="material-input"></small>
+                                    </div>
+                                </div>
+                                <div class="login_operate">
+                                    <!-- <a href="#">忘记密码?</a> -->
+                                    <a href="#" class="pull-right" name="login">已有帐号，登录</a>
+                                </div>
+                                <!--login_operate end-->
+                            </div>
+                            <div class="text-center login_btn_con">
+                                <!-- <button type="sumbit" class="btn btn-primary login_btn">登录</button> -->
+                                <a href="javascript:void(0);" class="btn btn-primary c-login-btn register_btn">注册</a>
+                            </div>
+                        </form>
+                    </div>
+                    <!--card end-->
+                </div>
+                <!--col-md-4 end-->
+            </div>
+            <!--row end-->
+        </div>
+        <!--container end-->
+        <div class="footer login_footer">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="feedback.html">发送反馈</a></li>
+                    <li><a href="help.html">帮助</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <div class="copyright pull-right">Designed by : bem.zhao@gmail.com</div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/jquery-1.11.3.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/material.min.js"></script>
+    <script src="../static/js/ripples.min.js"></script>
+    <script>
+    $.material.init()
+    </script>
+    <!--messenger-->
+    <link rel="stylesheet" href="../static/js/messenger/messenger.css">
+    <link rel="stylesheet" href="../static/js/messenger/messenger-theme-future.css">
+    <script src="../static/js/messenger/messenger.min.js"></script>
+    <!--messenger end-->
+    <!--validator-->
+    <link rel="stylesheet" href="../static/js/validator/bootstrapValidator.min.css" />
+    <script type="text/javascript" src="../static/js/validator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="../static/js/validator/zh_CN.js"></script>
+    <script src="../static/js/validator/initialize.js"></script>
+    <!-- validator end -->
+    <!-- 切换 -->
+</body>
+
+</html>

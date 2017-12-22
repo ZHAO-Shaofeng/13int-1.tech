@@ -153,12 +153,12 @@
             <!---------- main in here ---------->
             <div class="container">
                 <div class="col-md-4 pd8 m-plr-16">
-                    <div class="slideTxtBox">
+                    <div class="slideTxtBox c-shadow">
                         <div class="hd"></div>
                         <div class="bd">
                             <ul>
                                 <a href="userMessage.html" class="userMessage-action">
-                                    <div class="userMessage c-shadow">
+                                    <div class="userMessage">
                                         <!--用户留言-->
                                         <div class="blog-article">
                                             <div class="head">
@@ -186,7 +186,7 @@
                             </ul>
                             <ul>
                                 <a href="userMessage.html" class="userMessage-action">
-                                    <div class="userMessage c-shadow">
+                                    <div class="userMessage">
                                         <!--用户留言-->
                                         <div class="blog-article">
                                             <div class="head">
@@ -214,7 +214,7 @@
                             </ul>
                             <ul>
                                 <a href="userMessage.html" class="userMessage-action">
-                                    <div class="userMessage c-shadow">
+                                    <div class="userMessage">
                                         <!--用户留言-->
                                         <div class="blog-article">
                                             <div class="head">
@@ -251,9 +251,9 @@
                         <div class="party c-shadow">
                             <!--班级聚会-->
                             <img src="../static/images/party.jpg" alt="" class="party-bg">
-                            <div class="info">Connecting you with us</div>
+                            <div class="info">把你和我们联系在一起</div>
                             <div class="more">
-                                <p>veiw work</p>
+                                <p>班级聚会</p>
                                 <p><img src="../static/images/view-work.png" alt=""></p>
                             </div>
                             <!--more end-->
@@ -279,7 +279,7 @@
                                     <a href="classPhoto.html"><img src="../static/images/cp-index1.jpeg" alt=""></a>
                                     <div class="carousel-caption">
                                         <h3>班级相册</h3>
-                                        <p>班级相册描述</p>
+                                        <!-- <p>班级相册描述</p> -->
                                     </div>
                                     <!--图片介绍-->
                                 </div>
@@ -287,39 +287,35 @@
                                     <a href="classPhoto.html"><img src="../static/images/cp-index2.jpg" alt=""></a>
                                     <div class="carousel-caption">
                                         <h3>班级相册</h3>
-                                        <p>班级相册描述</p>
+                                        <!-- <p>班级相册描述</p> -->
                                     </div>
                                 </div>
                                 <div class="item">
                                     <a href="classPhoto.html"><img src="../static/images/cp-index3.jpg" alt=""></a>
                                     <div class="carousel-caption">
                                         <h3>班级相册</h3>
-                                        <p>班级相册描述</p>
+                                        <!-- <p>较场尾一日游</p> -->
                                     </div>
                                 </div>
                             </div>
                             <!--carousel-inner end-->
-                            <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right"></span>
-					    <span class="sr-only">Next</span>
-					  </a> -->
                         </div>
                         <!--carousel end-->
                     </div>
                     <!--classPhoto end-->
                 </div>
                 <!--col-md-8 end-->
-                <div class="col-md-4 pd8 m-plr-16 pull-right">
+                <div class="col-md-4 pd8 m-plr-16 pull-right NoticeInfo">
+                    <!-- <div class="hd">
+                        <div class="material-icons prev">arrow_back</div>
+                        <div class="material-icons next">arrow_forward</div>
+                    </div> -->
                     <a href="classNotice.html" class="classNotice-action">
                         <div class="classNotice c-shadow">
                             <!--班级公告-->
                             <div class="notice-img-div"><img src="../static/images/work-thumbs-mds.jpg" alt=""></div>
-                            <div class="NoticeInfo">
-                                <div class="hd"></div>
+                            <div class="">
+                                
                                 <div class="bd">
                                     <ul>
                                         <div class="info">
@@ -448,7 +444,7 @@
         <script src="../static/js/jquery.SuperSlide.2.1.1.js"></script>
         <script>
         jQuery(".slideTxtBox").slide({ effect: "top", autoPlay: true, delayTime: 2000 });
-        jQuery(".NoticeInfo").slide({ effect: "fold", autoPlay: true });
+        jQuery(".NoticeInfo").slide({ effect: "fold", autoPlay: true, trigger:"click" });
         </script>
 </body>
 
