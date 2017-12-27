@@ -757,6 +757,9 @@ a, a:focus, a:hover{color: #2196f3;}
     padding: 40px 0 15px;
     clear: both;    
 }
+@media (max-width: 768px){
+    #footer {padding: 24px 0 8px;}
+}
 #footer .f-menu {
     display: block;
     width: 100%;

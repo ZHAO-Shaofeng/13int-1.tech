@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>注册</title>
+    <title>忘记密码</title>
     <link rel="shortcut icon" href="../static/fonts/favicon.ico">
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/bootstrap-material-design.min.css">
@@ -22,63 +22,48 @@
 <body class="login-page">
     <div class="page-header header-filter">
         <div class="container fulltainer">
-            <!-- 注册 -->
-            <div class="card card-enter" name="register_Form">
+            <!-- 忘记密码 -->
+            <div class="card card-enter">
                 <div class="dropdown party-menu login-menu">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                         <i class="material-icons">more_vert</i>
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                         <li><a href="login.html" class="text-center">登录</a></li>
-                        <li><a href="forget_pwd.html" class="text-center">忘记密码？</a></li>
+                        <li><a href="register.html" class="text-center">注册</a></li>
                     </ul>
                 </div>
-                <form class="form login_Form register_validate" method="" action="">
+                <form class="form login_Form forget_validate" method="" action="">
                     <div class="header header-primary text-center">
-                        <i class="material-icons">group_add</i>
+                        <i class="material-icons">fingerprint</i>
                     </div>
-                    <p class="form-title text-center tit-md-show">注册</p>
-                    <p class="form-title text-center hide tit-xs-show">新的成员</p>
+                    <p class="form-title text-center tit-md-show">忘记密码？</p>
+                    <p class="form-title text-center hide tit-xs-show">忘记密码？</p>
                     <div class="content">
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="material-icons">email</i>
                             </span>
                             <div class="form-group is-empty">
-                                <input type="eamil" class="form-control" placeholder="邮箱" name="email">
-                                <small class="material-input"></small>
+                                <input type="email" class="form-control" placeholder="电子邮箱" name="email">
+                                <span class="material-input"></span>
                             </div>
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon">
-                                <i class="material-icons">account_circle</i>
+                                <i class="material-icons" style="transform: rotate(270deg);">vpn_key</i>
                             </span>
-                            <div class="form-group is-empty">
-                                <input type="text" class="form-control" placeholder="帐号" name="name">
-                                <small class="material-input"></small>
+                            <div class="form-group" name="success">
+                                <div class="col-md-8 col-sm-8 col-xs-8 plr0">
+                                    <input type="text" class="form-control" placeholder="验证码..." name="code" />
+                                </div>
+                                <label class="btn control-label plr0 col-md-4 col-sm-4 col-xs-4 btn-primary send_code">发送验证码</label>
                             </div>
                         </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <i class="material-icons">lock_outline</i>
-                            </span>
-                            <div class="form-group is-empty">
-                                <input type="password" placeholder="密码" class="form-control" name="new_password">
-                                <small class="material-input"></small>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <i class="material-icons">done_all</i>
-                            </span>
-                            <div class="form-group is-empty">
-                                <input type="password" placeholder="确认密码" class="form-control" name="confirm_password">
-                                <small class="material-input"></small>
-                            </div>
-                        </div>
+                        <!--login_operate end-->
                     </div>
                     <div class="text-center login_btn_con">
-                        <a href="javascript:void(0);" class="btn btn-primary c-login-btn register_btn">注册</a>
+                        <a href="javascript:void(0);" class="btn btn-primary c-login-btn forget_btn">下一步</a>
                     </div>
                 </form>
             </div>
@@ -94,8 +79,8 @@
                     <li><a href="contact.html">联系我们</a></li>
                 </ul>
                 <div class="copyright pull-right">Designed by : bem.zhao@gmail.com</div>
-                <div class="pull-left hide xsshow">已有帐号，<a href="login.html">登录</a></div>
-                <div class="pull-right hide xsshow"><a href="forget_pwd.html">忘记密码？</a></div>
+                <div class="pull-left hide xsshow">想起来了！<a href="register.html">登录</a></div>
+                <div class="pull-right hide xsshow"><a href="">注册</a></div>
             </div>
         </div>
     </div>

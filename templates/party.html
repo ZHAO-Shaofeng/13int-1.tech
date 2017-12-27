@@ -169,7 +169,7 @@
                                 </div>
                                 <div class="media-body p-t-5">
                                     <strong class="col-md-6 col-sm-6 col-xs-6 text-center">发起人：赵少锋</strong>
-                                    <strong class="col-md-6 col-sm-6 col-xs-6 text-center">发起时间：2016.10.14</strong>
+                                    <strong class="col-md-6 col-sm-6 col-xs-6 text-center">发布时间：2016.10.14</strong>
                                 </div>
                                 <div class="party-menu">
                                     <i class="material-icons currency-form-close">close</i>
@@ -300,7 +300,7 @@
                                             </div>
                                             <div class="media-body p-t-5">
                                                 <strong>发起人：林晓鑫</strong>
-                                                <small class="tl-time">发起时间：2016.05.06</small>
+                                                <small class="tl-time">该用户很懒，什么都没有写。</small>
                                             </div>
                                         </div>
                                         <!--tl-header end-->
@@ -356,7 +356,7 @@
                                             </div>
                                             <div class="media-body p-t-5">
                                                 <strong>发起人：林晓鑫</strong>
-                                                <small class="tl-time">发起时间：2016.05.06</small>
+                                                <small class="tl-time">该用户很懒，什么都没有写。</small>
                                             </div>
                                             <div class="party-static party-menu">已结束</div>
                                         </div>
@@ -410,7 +410,7 @@
                                             </div>
                                             <div class="media-body p-t-5">
                                                 <strong>发起人：林晓鑫</strong>
-                                                <small class="tl-time">发起时间：2016.10.14</small>
+                                                <small class="tl-time">该用户很懒，什么都没有写。</small>
                                             </div>
                                             <div class="dropdown party-menu">
                                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
@@ -514,11 +514,28 @@
         <link href="../static/js/fileinput/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
         <script src="../static/js/fileinput/fileinput.min.js" type="text/javascript"></script>
         <!--bootstrap多图上传预览 end-->
-        <!--bootstrap时间控件-->
-        <link rel="stylesheet" href="../static/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
-        <script src="../static/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-        <script src="../static/js/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
-        <!--bootstrap时间控件 end-->
+        <!--datatimepicker-->
+        <link rel="stylesheet" href="../static/js/bootstrap-material-datetimepicker/bootstrap-material-datetimepicker.css" />
+        <script src="../static/js/bootstrap-material-datetimepicker/moment-with-locales.min.js"></script>
+        <script src="../static/js/bootstrap-material-datetimepicker/bootstrap-material-datetimepicker.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#end-time').bootstrapMaterialDatePicker({ 
+                weekStart : 0, 
+                format: 'YYYY-MM-DD  HH:mm', 
+                lang: "zh-cn" 
+            });
+            $('#start-time').bootstrapMaterialDatePicker({ 
+                weekStart : 0, 
+                format: 'YYYY-MM-DD  HH:mm', 
+                lang: "zh-cn", 
+                minDate : new Date() 
+            }).on('change', function(e, date){
+                $('#end-time').bootstrapMaterialDatePicker('setMinDate', date);
+            });
+        });
+        </script>
+        <!--datatimepicker end-->
         <!--表单的控制-->
         <script>
         $(".currenty-new, .party-launch-btn").on("click", function() {

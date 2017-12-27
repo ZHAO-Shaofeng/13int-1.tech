@@ -6,6 +6,7 @@
 .m-t-25{margin-top: 25px !important;}
 .l-p-4{letter-spacing: 4.2px;}
 .m-t-0{margin-top: 0 !important;}
+.p-t-5{padding-top: 5px !important;}
 #leftmenu .main-menu .btn{
     padding: 0;
     width: 100%;
@@ -170,6 +171,10 @@
     font-size: 35px;
 }
 .party-action:hover .party-bg{transform: scale(1.1);}
+@media (max-width: 768px) {
+    .party-action:hover .info{font-size: 28px;}
+    .party-action:hover .party-bg{transform: scale(1);}
+}
 .classPhoto{
     width: 100%;
     height: 374px;
@@ -472,17 +477,13 @@
     padding-left: 300px;
 }
 .timeline-label .tl-header .tvh-user{padding-right: 15px;}
+
 .timeline-label .tl-header .tvh-user img{
     width: 46px;
     height: 46px;
     border-radius: 50%;
 }
-.media-body {
-    zoom: 1;
-    display: block;
-    width: auto;
-    padding-top: 5px;
-}
+.timeline-label .tl-header .media-body .tl-time{color: #A9A9A9;}
 .media-body > strong{
     display: block;
     color: rgba(0,0,0,.87);
@@ -597,15 +598,15 @@
     }
     .party-left .img-div img{
         border-radius: 50%;
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
         border: 4px solid #fff;
         box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
         display: inline-block;
     }
     .party-left .img-div .pmo-stat{
-        padding: 45px 5px 12px;
-        margin-top: -30px;
+        padding: 26px 5px 12px;
+        margin-top: -17px;
     }
     .pmo-contact{display: none;}
     .party-body{
@@ -617,6 +618,7 @@
         padding: 0;
         background: #f7f7f7;
         margin-bottom: 0;
+        margin-top: 8px;
     }
     .timecard-body{
         padding: 0;
@@ -647,7 +649,7 @@
 }
 .form-header{
     width: 100%;
-    padding: 60px 18px 5px;
+    padding: 65px 18px 5px;
     background: #F9F9F9;
 }
 .form-header .tvh-user{
@@ -1144,7 +1146,7 @@
     overflow: visible;
     margin: 0;
 }
-.listview .lv-body .media-body{padding: 7px;}
+.listview .lv-body .media-body{padding: 0 8px;}
 .lv-actions li a{border-radius: 50%;color: rgba(0,0,0,.87);}
 .lv-actions li a:hover{background-color: rgba(153,153,153,.2);}
 .dropdown-menu li a:hover {background-color: transparent;}
@@ -1194,9 +1196,8 @@
     }
     .listview .lv-item.media{
         background: #fff;
-        margin-top: 16px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
+    .dview{padding: 0;}
 }
 .dview_card_header{
     position: relative;
@@ -1259,6 +1260,7 @@
 }
 .dview_card_body{padding: 20px;}
 @media (max-width: 500px) {
+    .dview_card{margin-top: 8px!important;}
     .dview_head{
         position: absolute;
         top: 0;
@@ -1637,8 +1639,9 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
     .title-frame{
         top: 50%;
         left: 50%;
-        transform: translate(-121px,-84px);
+        transform: translate(-121px,-84px)!important;
     }
+    .discussion-action:hover .title-frame-copy, .discussion-action:hover .mark{opacity: 0;}
     .party, .classPhoto, .discussion{height: auto;}
     .party .info {
         top: 50%;
@@ -1646,7 +1649,8 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
     }
 }
 @media (max-width: 500px) {
-    #main{padding-top: 95px;}
+    #main{padding-top: 72px;}
+    .class-main, .photo-walls{margin-top: 8px!important;}
     .party .info {font-size: 20px;}
     .classNotice .info .dec{
         min-height: inherit;
@@ -1747,6 +1751,12 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
 .member-main .item .item-footer a:hover{color: #009688;}
 @media (max-width: 500px) {
     .member-main .col-md-3.col-sm-4.col-xs-6{width: 100%;}
+    .member-main .item{margin: 16px 0 0 0;}
+    .listview-card{margin: 8px 0 0 0; padding: 0;}
+    .lv-header-alt{background: #fff;}
+    .lv-item-xsdow{box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);}
+    .listview.lv-lg .lv-item{padding: 12px 35px 12px 16px;}
+    .listview .lv-item .lv-actions{right: 8px; top: 8px;}
 }
 .tab-nav {
     list-style: none;
@@ -1824,6 +1834,9 @@ input::-webkit-outer-spin-button {-webkit-appearance: none;}
     margin: 0 auto 25px;
     width: calc(100% - 32px);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 500px) {
+    .cp-tab-nav{margin: 0 auto 16px;}
 }
 .fcontainer{
     max-width: 900px;
