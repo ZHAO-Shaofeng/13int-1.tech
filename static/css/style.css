@@ -1302,6 +1302,7 @@
     }
     .dview_card_header .title{font-size: 21px;}
     .stage {top: -15px !important;right: -15px !important;}
+    .classPhoto .carousel-caption h3{font-size: 13px;}
 }
 .wall-comment-list {
     padding: 20px;
