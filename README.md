@@ -12,4 +12,4 @@ Material design theme for Bootstrap, it is a Bootstrap V3 compatible theme.
 We use a lot of plugins, including date selection, file selection, etc. They are all based on bootstrap.
 
 
-[You can watch the demo here](http://13int-1.tech/templates/index.html)
+[You can watch the demo here](https://13int-1.tech/templates/index.html)
